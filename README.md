@@ -1,0 +1,2 @@
+# hoainamrc
+My configuration
