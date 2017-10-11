@@ -21,9 +21,9 @@ def main():
 
     home = os.path.expanduser('~')
     root = 'file_config'
+
     for src in src_dst:
         source = os.path.realpath(os.path.join(root,src))
-        print source
         dest = os.path.join(home, src_dst[src])
         if os.path.islink(dest):
             if os.lstat(dest):

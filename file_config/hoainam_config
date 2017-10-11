@@ -21,13 +21,14 @@ alias grep='grep --color=auto'
 alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
 
 # Setting for Visual Studio
-if [ -f /Applications/Visual Studio Code.app/Contents/Resources/app/bin/code ]
+if [ -f "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" ]
 then
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 fi
 
 # Setting for Sublime
-sublime_file='/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'
-if [ -f $sublime_file] then
+if [ -f "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ] 
+then
 export PATH="$PATH:/Applications/Sublime Text.app/Contents/SharedSupport/bin"
 fi
+
