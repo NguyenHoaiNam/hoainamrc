@@ -1,0 +1,28 @@
+# Some more ls
+alias la='ls -A'
+alias l='ls -CF'
+
+alias cdg='cd ~/MyGit'
+alias psg='ps aux | grep '
+alias md='mkdir'
+alias rmd='rm -rf'
+alias cdp='cd ~/Code-python'
+alias cdv='cd ~/Code-python/virtual'
+
+# Alias for virtual enviroment
+alias en2='source /Users/NamHoai/Code-python/virtual/env_py2/bin/activate'
+
+# Alias for Git
+alias gst='git status'
+alias grw='git review'
+
+# Some more color
+alias grep='grep --color=auto'
+alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
+
+# Setting for Visual Studio
+bin_visual_studio_file="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+if [ -f $bin_visual_studio_file ]
+then
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+fi

@@ -1,0 +1,64 @@
+set nocompatible
+set encoding=utf-8
+set t_Co=256
+" Setup Vundle
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" Start to declare plugins
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+
+" Plugins must must be added before the following line
+call vundle#end()
+filetype plugin indent on
+
+""" Nerdtree
+" Activate NerdTree by F2
+map <F2> :NERDTreeToggle<CR>
+" Ignore filed displayed
+let NERDTreeIgnore  = ['\.pyc', '__pycache__', '\.retry']
+let g:nerdtree_tabs_open_on_console_startup=0
+let g:solarized_termcolors=256
+
+
+""" python-mode settings
+augroup vimrc_autocmds
+        autocmd!
+        autocmd BufNewFile *.py 0put =\"# -*- coding: utf-8 -*-\<nl>\"|$
+        autocmd BufNewFile *.py 0put =\"#!/usr/bin/env python\<nl>\"|$
+        autocmd BufNewFile *.sh 0put =\"#!/usr/bin/env bash\<nl>\"|$
+augroup END
+
+set history=50
+set number
+syntax on
+
+" Indenting
+" set autoindent
+" set cindent
+" set smartindent
+set backspace=indent,eol,start
+
+" Tab
+set expandtab
+set sw=4
+set ts=4
+set colorcolumn=79
+
+" Show red color when the long line > 80
+"augroup vimrc_autocmds
+"      autocmd BufEnter * highlight OverLength ctermbg=red guibg=red
+"      autocmd BufEnter * match OverLength /\%80v.*/
+"augroup END
+
+" Incremental search when start typing
+set incsearch
+set hlsearch
+
+" Setup solarized color
+colorscheme solarized
+
+" Setup mapping
+" nmap <:q> :q!
