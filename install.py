@@ -7,22 +7,23 @@ import logging
 import shutil
 import sys
 
-if sys.version_info.major != 2 or sys.version_info.minor != 7:
-    sys.exit('Require python 2.7 to run')
-
-logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger(__name__)
-
-src_dst = {
-    'vimrc': '.vimrc',
-    'hoainam_config': '.hoainam_config'
-}
-
-home = os.path.expanduser('~')
-
 def main():
+    if sys.version_info.major != 2 or sys.version_info.minor != 7:
+        sys.exit('Require python 2.7 to run')
+
+    logging.basicConfig(level=logging.DEBUG)
+    logger = logging.getLogger(__name__)
+
+    src_dst = {
+        'vimrc': '.vimrc',
+        'hoainam_config': '.hoainam_config'
+    }
+
+    home = os.path.expanduser('~')
+    root = 'file_config'
     for src in src_dst:
-        source = os.path.abspath(src)
+        source = os.path.realpath(os.path.join(root,src))
+        print source
         dest = os.path.join(home, src_dst[src])
         if os.path.islink(dest):
             if os.lstat(dest):
