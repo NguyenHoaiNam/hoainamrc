@@ -15,6 +15,14 @@ alias en2='source /Users/NamHoai/Code-python/virtual/env_py2/bin/activate'
 # Alias for Git
 alias gst='git status'
 alias grw='git review'
+function gcl() {
+    cd ~/MyGit
+    if [ -z $3 ]; then
+        git clone https://github.com/$1/$2.git
+    else
+        git clone https://github.com/$1/$2.git -b $3
+    fi
+}
 
 # Some more color
 alias grep='grep --color=auto'
