@@ -20,7 +20,7 @@ function gcl() {
     if [ -z $3 ]; then
         git clone https://github.com/$1/$2.git
     else
-        git clone https://github.com/$1/$2.git -b $3
+        git clone https://github.com/$1/$2.git -b stable/$3
     fi
 }
 

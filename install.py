@@ -16,7 +16,8 @@ def main():
 
     src_dst = {
         'vimrc': '.vimrc',
-        'hoainam_config': '.hoainam_config'
+        'hoainam_config': '.hoainam_config',
+        'ssh_config': '.ssh/config'
     }
 
     home = os.path.expanduser('~')
