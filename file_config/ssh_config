@@ -6,3 +6,6 @@ Host h1
     Hostname 192.168.10.133
     user stack
 
+Host h2
+    Hostname 192.168.10.135
+    user stack

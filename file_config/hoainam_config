@@ -8,6 +8,7 @@ alias md='mkdir'
 alias rmd='rm -rf'
 alias cdp='cd ~/Code-python'
 alias cdv='cd ~/Code-python/virtual'
+alias cdc='cd ~/MyGit/hoainamrc/file_config'
 
 # Alias for virtual enviroment
 alias en2='source /Users/NamHoai/Code-python/virtual/env_py2/bin/activate'

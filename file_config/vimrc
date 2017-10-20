@@ -58,7 +58,7 @@ set incsearch
 set hlsearch
 
 " Setup solarized color
-colorscheme solarized
+" colorscheme solarized
 
 " Setup mapping
 " nmap <:q> :q!
