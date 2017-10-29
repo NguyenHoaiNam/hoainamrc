@@ -19,7 +19,9 @@ alias gst='git status'
 alias grw='git review'
 
 function gcn() {
+    if [ -d ~/MyGit ] ; then
     cd ~/MyGit
+    fi
     if [ -z $3 ]; then
         git clone https://github.com/$1/$2.git
     else
