@@ -7,9 +7,5 @@ Host h1
     user stack
 
 Host h2
-    Hostname 192.168.10.135
+    Hostname 192.168.100.65
     user stack
-
-Host ctl
-    Hostname 192.168.100.103
-    user root
