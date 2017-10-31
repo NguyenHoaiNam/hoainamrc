@@ -6,6 +6,8 @@ alias cdg='cd ~/MyGit'
 alias psg='ps aux | grep '
 alias md='mkdir'
 alias rmd='rm -rf'
+alias cb='cd ..'
+
 # alias ls='ls --hide="*.pyc"'
 alias cdp='cd ~/Code-python'
 alias cdv='cd ~/Code-python/virtual'
