@@ -9,3 +9,15 @@ Host h1
 Host h2
     Hostname 192.168.100.65
     user stack
+
+Host dk1
+   Hostname 192.168.10.51
+   user stack
+
+Host dk2
+   Hostname 192.168.10.52
+   user stack
+
+Host dk3
+   Hostname 192.168.10.53
+   user stack
