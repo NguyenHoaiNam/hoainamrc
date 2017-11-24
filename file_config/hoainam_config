@@ -16,6 +16,7 @@ alias cb='cd ..'
 
 # Alias for virtual enviroment
 alias en2='source /Users/NamHoai/Code-python/virtual/env_py2/bin/activate'
+alias en3='source /Users/NamHoai/Code-python/virtual/env_py3/bin/activate'
 
 # Alias for getting weather
 alias gw='curl wttr.in'
