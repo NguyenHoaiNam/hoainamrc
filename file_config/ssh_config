@@ -1,23 +1,43 @@
-Host u1
-    Hostname 192.168.10.130
-    user stack
-
-Host h1
-    Hostname 192.168.10.133
-    user stack
-
-Host h2
-    Hostname 192.168.100.65
-    user stack
-
 Host dk1
-   Hostname 192.168.10.51
-   user stack
-
-Host dk2
-   Hostname 192.168.10.52
-   user stack
-
-Host dk3
-   Hostname 192.168.10.53
-   user stack
+    hostname 10.10.10.132
+    user stack
+Host kode
+    hostname 172.16.68.150
+    user root
+    port 22
+Host k1
+    user root
+    hostname 172.16.68.161
+    port 22
+Host k2
+    hostname 172.16.68.152
+    user root
+    port 22
+Host k3
+    hostname 172.16.68.153
+    user root
+    port 22
+Host cd1
+    hostname 172.16.68.140
+    user root
+    port 22
+Host cd2
+    hostname 172.16.68.153
+    user root
+    port 22
+Host cd3
+    hostname 172.16.68.131
+    user root
+    port 22
+Host jen
+    hostname 123.30.212.247
+    user root
+    port 22
+Host k4
+    hostname 172.16.68.154
+    user root
+    port 22
+Host u1
+    hostname 10.10.10.135
+    user stack
+    port 22
